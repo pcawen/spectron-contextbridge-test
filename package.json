@@ -1,0 +1,32 @@
+{
+  "name": "spectron-contextbridge-test",
+  "version": "1.0.0",
+  "description": "spectron contextbridge test",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "jest"
+  },
+  "repository": "https://github.com/pcawen/spectron-contextbridge-test",
+  "keywords": [
+    "electron",
+    "spectron",
+    "contextBridge"
+  ],
+  "jest": {
+    "transform": {
+      "^.+\\.js$": "<rootDir>/node_modules/babel-jest"
+    },
+    "testPathIgnorePatterns": [],
+    "testMatch": [
+      "**/spectron-test/?(*.)(spec|test).js?(x)"
+    ]
+  },
+  "author": "GitHub",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^7.1.9",
+    "jest": "^20.0.1",
+    "spectron": "9.0.0"
+  }
+}
